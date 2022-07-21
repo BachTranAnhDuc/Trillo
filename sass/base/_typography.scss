@@ -1,0 +1,13 @@
+body {
+  background-image: $background-color;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $color-grey-dark-2;
+}
