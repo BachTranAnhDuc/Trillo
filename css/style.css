@@ -78,7 +78,7 @@ body {
   background-color: #f4f2f2;
   padding: 0.8rem 2.4rem;
   width: 80%;
-  border-radius: 8px;
+  border-radius: 1.8rem;
   height: 3.2rem; }
   .search__input:focus {
     outline: none;
@@ -89,7 +89,7 @@ body {
 .search__button {
   border: none;
   background-color: inherit;
-  transform: translateX(-2.5rem);
+  transform: translateX(-3rem);
   cursor: pointer; }
   .search__button:focus {
     outline: none; }
@@ -142,15 +142,72 @@ body {
       font-size: 1.6rem;
       transform: translateY(1rem); }
 
+.side-nav {
+  position: relative;
+  margin-top: 2.4rem;
+  flex: 1;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem; }
+  .side-nav__item {
+    position: relative;
+    padding: 0.8rem 3rem; }
+    .side-nav__item span {
+      font-size: inherit; }
+    .side-nav__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #eb2f64;
+      width: 0.8rem;
+      height: 100%;
+      transform: scaleY(0);
+      transition: transform 0.3s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.3s; }
+    .side-nav__item:hover::before, .side-nav__item--active::before {
+      transform: scaleY(1);
+      width: 100%; }
+    .side-nav__item:active::before {
+      background-color: #ba265d; }
+  .side-nav__link:link, .side-nav__link:visited {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: inherit;
+    text-decoration: none;
+    z-index: 10; }
+  .side-nav__icon {
+    fill: #f0eeee;
+    width: 1.8rem;
+    height: 1.8rem;
+    color: inherit; }
+
+.legal {
+  padding: 1.2rem 1.2rem; }
+
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 120rem;
   margin: 8rem auto;
   background-color: #f4f2f2;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  min-height: 50rem; }
+  min-height: 80rem; }
 
 .content {
-  display: flex; }
+  display: flex;
+  height: 100%;
+  flex: 1; }
+
+.sidebar {
+  flex: 0 0 18%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #faf9f9; }
 
 .hotel-view {
   flex: 1; }
