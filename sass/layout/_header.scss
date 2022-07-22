@@ -1,9 +1,21 @@
 .header {
+  display: flex;
   height: 7rem;
   background-color: #fff;
   border-bottom: $color-grey-light-2;
+
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.6rem;
 }
 
 .nav {
   flex: 0 0 18%;
+}
+
+.logo {
+  height: 4.8rem;
+  margin-left: 2.4rem;
+
+  cursor: pointer;
 }

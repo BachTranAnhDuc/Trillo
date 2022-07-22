@@ -66,6 +66,82 @@ body {
   font-weight: 400;
   color: #777; }
 
+.search__form {
+  flex: 0 0 40%;
+  display: flex;
+  flex-grow: 1;
+  max-width: 40rem;
+  position: relative; }
+
+.search__input {
+  border: none;
+  background-color: #f4f2f2;
+  padding: 0.8rem 2.4rem;
+  width: 80%;
+  border-radius: 8px;
+  height: 3.2rem; }
+  .search__input:focus {
+    outline: none;
+    width: 90%;
+    background-color: #f0eeee;
+    height: 3.6rem; }
+
+.search__button {
+  border: none;
+  background-color: inherit;
+  transform: translateX(-2.5rem);
+  cursor: pointer; }
+  .search__button:focus {
+    outline: none; }
+
+.search__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #777; }
+
+.user-nav {
+  align-self: stretch;
+  display: flex;
+  justify-content: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer; }
+  .user-nav > *:hover {
+    background-color: #ccc; }
+  .user-nav__icon-box {
+    display: flex;
+    position: relative; }
+    .user-nav__icon-box:hover {
+      background-color: #ccc; }
+  .user-nav__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    align-self: center; }
+  .user-nav__notification {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #eb2f64;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    text-align: center; }
+  .user-nav__user {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem; }
+    .user-nav__user-photo {
+      width: 4.8rem;
+      height: 4.8rem;
+      border-radius: 50%; }
+    .user-nav__user-name {
+      font-family: inherit;
+      font-size: 1.6rem;
+      transform: translateY(1rem); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -80,9 +156,18 @@ body {
   flex: 1; }
 
 .header {
+  display: flex;
   height: 7rem;
   background-color: #fff;
-  border-bottom: #f4f2f2; }
+  border-bottom: #f4f2f2;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.6rem; }
 
 .nav {
   flex: 0 0 18%; }
+
+.logo {
+  height: 4.8rem;
+  margin-left: 2.4rem;
+  cursor: pointer; }
