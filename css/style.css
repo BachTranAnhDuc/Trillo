@@ -79,12 +79,13 @@ body {
   padding: 0.8rem 2.4rem;
   width: 80%;
   border-radius: 1.8rem;
-  height: 3.2rem; }
+  height: 3.2rem;
+  transition: all 0.3s; }
   .search__input:focus {
     outline: none;
     width: 90%;
     background-color: #f0eeee;
-    height: 3.6rem; }
+    transform: scaleY(1.1); }
 
 .search__button {
   border: none;
