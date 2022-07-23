@@ -12,3 +12,18 @@
   font-weight: $weight;
   color: #fff;
 }
+
+@mixin normal-text {
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: $color-grey-dark-1;
+}
+
+@mixin line-bottom-1 {
+  border-bottom: $line-grey-1;
+}
+
+@mixin line-top-1 {
+  border-top: $line-grey-1;
+}

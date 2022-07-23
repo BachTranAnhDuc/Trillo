@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
 
-  border-bottom: $border-bottom-1;
+  border-bottom: $line-grey-1;
 
   &__heading {
     @include heading--primary;
