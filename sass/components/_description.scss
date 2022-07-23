@@ -36,6 +36,7 @@
 
   &__text {
     @include normal-text;
+    line-height: 1.6;
   }
 
   &__recommend {
