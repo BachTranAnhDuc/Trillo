@@ -31,3 +31,64 @@
     }
   }
 }
+
+.btn {
+  border: none;
+  padding: 3.2rem 8rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.5s;
+
+  cursor: pointer;
+
+  & > * {
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+
+  &__visible {
+    display: inline-block;
+  }
+
+  &__invisible {
+    position: absolute;
+    display: inline-block;
+
+    top: -100%;
+    left: 0;
+    // color: red;
+  }
+
+  &:hover &__invisible {
+    // top: 100%;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 100%);
+  }
+
+  &:hover &__visible {
+    transform: translateY(-200%);
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-dark,
+      $color-primary-light
+    );
+  }
+
+  &:focus {
+    animation: pulsate 0.4s infinite;
+  }
+}
