@@ -7,6 +7,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 3.6rem;
+
+  @include repond(smallest) {
+    flex-wrap: wrap;
+  }
 }
 
 .nav {

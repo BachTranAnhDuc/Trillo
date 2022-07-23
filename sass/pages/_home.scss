@@ -8,12 +8,20 @@
   min-height: 80rem;
   // border-radius: 2.4rem;
   // margin-bottom: 12rem;
+
+  @include repond(largest) {
+    margin: 0;
+  }
 }
 
 .content {
   display: flex;
   height: 100%;
   flex: 1;
+
+  @include repond(medium) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -39,6 +47,10 @@
   display: flex;
   gap: 3.6rem;
   // background-color: red;
+
+  @include repond(small) {
+    flex-direction: column;
+  }
 }
 
 .cta {
@@ -51,5 +63,9 @@
     font-weight: 300;
     color: $color-grey-dark-1;
     text-transform: uppercase;
+
+    @include repond(large) {
+      font-size: 1.8rem;
+    }
   }
 }

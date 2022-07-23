@@ -52,6 +52,9 @@ Grey dark 3: #999
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box;
@@ -172,6 +175,10 @@ body {
   flex-grow: 1;
   max-width: 40rem;
   position: relative; }
+  @media only screen and (max-width: 31.25em) {
+    .search__form {
+      order: 1;
+      width: 100%; } }
 
 .search__input {
   border: none;
@@ -251,9 +258,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      flex-direction: row;
+      margin-top: 0; } }
   .side-nav__item {
     position: relative;
     padding: 1.6rem 3.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1; } }
     .side-nav__item span {
       font-size: inherit; }
     .side-nav__item::before {
@@ -279,6 +293,9 @@ body {
     color: inherit;
     text-decoration: none;
     z-index: 10; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center; } }
   .side-nav__icon {
     fill: #f0eeee;
     width: 1.8rem;
@@ -288,6 +305,9 @@ body {
 .legal {
   padding: 1.2rem 2rem;
   font-size: 1.2rem; }
+  @media only screen and (max-width: 56.25em) {
+    .legal {
+      display: none; } }
 
 .gallery {
   display: flex; }
@@ -350,6 +370,9 @@ body {
       font-weight: 400;
       color: #fff;
       text-transform: uppercase; }
+      @media only screen and (max-width: 56.25em) {
+        .overview__rating--count {
+          display: none; } }
 
 .description {
   background-color: #faf9f9;
@@ -445,11 +468,17 @@ body {
   background-color: #f4f2f2;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 80rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0; } }
 
 .content {
   display: flex;
   height: 100%;
   flex: 1; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   flex: 0 0 18%;
@@ -466,6 +495,9 @@ body {
   margin: 4.6rem 3.6rem;
   display: flex;
   gap: 3.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .cta {
   background-color: #faf9f9;
@@ -476,6 +508,9 @@ body {
     font-weight: 300;
     color: #333;
     text-transform: uppercase; }
+    @media only screen and (max-width: 68.75em) {
+      .cta__heading {
+        font-size: 1.8rem; } }
 
 .header {
   display: flex;
@@ -485,6 +520,9 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 3.6rem; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap; } }
 
 .nav {
   flex: 0 0 18%; }

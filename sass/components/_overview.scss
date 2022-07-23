@@ -80,11 +80,19 @@
 
     &--average {
       @include span-rating(2rem, 400);
+
+      // @include repond(medium) {
+      //   font-size: 1.6rem;
+      // }
     }
 
     &--count {
       @include span-rating(1.2rem, 400);
       text-transform: uppercase;
+
+      @include repond(medium) {
+        display: none;
+      }
     }
   }
 }
