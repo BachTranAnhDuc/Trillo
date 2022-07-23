@@ -2,7 +2,7 @@
   display: flex;
   height: 7rem;
   background-color: #fff;
-  border-bottom: $color-grey-light-2;
+  border-bottom: $border-bottom-1;
 
   justify-content: space-between;
   align-items: center;
@@ -14,8 +14,14 @@
 }
 
 .logo {
-  height: 4.8rem;
+  height: 4rem;
   margin-left: 2.4rem;
 
   cursor: pointer;
+
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }

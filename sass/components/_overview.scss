@@ -1,0 +1,90 @@
+.gallery {
+  display: flex;
+
+  &__item {
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+  }
+}
+
+.overview {
+  display: flex;
+  // background-color: aquamarine;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: $border-bottom-1;
+
+  &__heading {
+    @include heading--primary;
+    padding: 1.6rem 3.2rem;
+  }
+
+  &__stars {
+    margin-right: auto;
+    // background-color: beige;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+
+    & > * {
+      cursor: pointer;
+    }
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__icon-star {
+    fill: $color-primary;
+  }
+
+  &__location {
+    display: flex;
+    // background-color: antiquewhite;
+    padding: 0.8rem 1.6rem;
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    // margin-right: 1.2rem;
+
+    & > * {
+      cursor: pointer;
+    }
+  }
+
+  &__icon-location {
+    fill: $color-primary;
+  }
+
+  &__rating {
+    background-color: $color-primary;
+    align-self: stretch;
+    padding: 0.8rem 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &--average {
+      @include span-rating(2rem, 400);
+    }
+
+    &--count {
+      @include span-rating(1.2rem, 400);
+      text-transform: uppercase;
+    }
+  }
+}
